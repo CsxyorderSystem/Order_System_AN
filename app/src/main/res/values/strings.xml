@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Order_System</string>
+    <string name="app_name">订餐系统</string>
+    <string name="title_activity_login">订餐系统</string>
+
+    <!-- 注册相关 -->
+    <string name="login_name">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_button">登录</string>
+    <string name="register_button">注册</string>
+    <string name="phone_number">请输入您的手机号码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="comfirm_password">请再次输入密码</string>
+    <string name="user_type_user">个人用户</string>
+    <string name="user_type_team">团队用户</string>
+    <string name="user_type_business">商家用户</string>
+    <string name="title_activity_register">注册</string>
+    <string name="register_type">注册类型</string>
+
+    <string name="login_error">用户名不能为空</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="user_type">
+        <item>个人</item>
+        <item>团队</item>
+        <item>商家</item>
+    </string-array>
+
+
+
 </resources>
