@@ -27,6 +27,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.a206170.order_system.R;
 
@@ -61,6 +62,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView,mLoginNameView;
     private View mProgressView;
     private View mLoginFormView;
+    private TextView forget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +70,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         setContentView(R.layout.activity_login);
         // Set up the login form.
         mLoginNameView = (EditText) findViewById(R.id.login_name);
+
+        forget=(TextView)findViewById(R.id.forget_password) ;
+        forget.setOnClickListener(onClickListener);
+
 
 
         mPasswordView = (EditText) findViewById(R.id.login_password);
@@ -334,5 +340,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
     }
+
+     private View.OnClickListener onClickListener=new View.OnClickListener(){
+
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()){
+
+                case R.id.forget_password:
+                    Intent forget=new Intent(LoginActivity.this,ForgetPasswordActivity.class);
+                    startActivity(forget);
+            }
+        }
+    };
 }
 
