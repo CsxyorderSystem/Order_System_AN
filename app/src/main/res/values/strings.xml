@@ -17,16 +17,24 @@
     <string name="user_type_business">商家用户</string>
     <string name="title_activity_register">注册</string>
     <string name="register_type">注册类型</string>
+    <string name="comfirm">确定</string>
+    <string name="forget_password">忘记密码？</string>
 
+
+    <string name="password_error">密码不能为空</string>
     <string name="login_error">用户名不能为空</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
     <string-array name="user_type">
         <item>个人</item>
         <item>团队</item>
         <item>商家</item>
     </string-array>
 
+    <string name="next_step">下一步</string>
 
 
 </resources>
