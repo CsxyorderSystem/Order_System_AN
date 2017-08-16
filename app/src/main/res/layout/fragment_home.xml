@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.a206170.order_system.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:id="@+id/homepage"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/homepage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/location_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/Location_info"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/meal_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/homepage1"
+                        android:layout_below="@+id/homepage1"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/mael_time"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homepage1"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/search_layout" />
+
+            </RelativeLayout>
+
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/ad_roll_pager"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:rollviewpager_play_delay="3000"
+                android:layout_below="@id/homepage"
+                ></com.jude.rollviewpager.RollPagerView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

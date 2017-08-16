@@ -19,10 +19,10 @@
     <string name="register_type">注册类型</string>
     <string name="comfirm">确定</string>
     <string name="forget_password">忘记密码？</string>
-
-
     <string name="password_error">密码不能为空</string>
     <string name="login_error">用户名不能为空</string>
+    <string name="Location_info">设置定位信息</string>
+    <string name="mael_time">用餐时间</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
@@ -35,6 +35,11 @@
     </string-array>
 
     <string name="next_step">下一步</string>
+    <string name="title_activity_user_main">UserMainActivity</string>
+    <string name="title_home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
