@@ -9,10 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import com.jude.rollviewpager.RollPagerView;
 import com.jude.rollviewpager.adapter.StaticPagerAdapter;
 import com.jude.rollviewpager.hintview.ColorPointHintView;
+
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -36,6 +41,8 @@ public class HomeFragment extends Fragment {
     private String mParam2;
     private RollPagerView mRollViewPager;
     private OnFragmentInteractionListener mListener;
+    private ListView Business_list;
+    private  List<Map<String,Object>> business_item;
 
 
     public HomeFragment() {
@@ -77,7 +84,10 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
         mRollViewPager=(RollPagerView)view.findViewById(R.id.ad_roll_pager);
+        Business_list=(ListView)view.findViewById(R.id.business_list);
+
         rollpager();
+        getList();
         return view;
     }
 
@@ -157,4 +167,13 @@ public class HomeFragment extends Fragment {
         }
 
     }
+    public void getList(){
+        BusinessListAdapter aa=new BusinessListAdapter();
+        business_item=aa.getData();
+        SimpleAdapter adapter=new SimpleAdapter(getActivity(),business_item,R.layout.business_item,
+                new String[]{"business_logo","business_name","business_estimate","business_seal_num","business_price","business_open"},
+                new int[]{R.id.business_logo,R.id.business_name,R.id.business_estimate,R.id.business_seal_num,R.id.business_price,R.id.business_open});
+        Business_list.setAdapter(adapter);
+    }
+
 }

@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.a206170.order_system.HomeFragment">
+    tools:context="com.example.a206170.order_system.HomeFragment"
+    android:background="@color/grey">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -64,10 +65,19 @@
             <com.jude.rollviewpager.RollPagerView
                 android:id="@+id/ad_roll_pager"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                app:rollviewpager_play_delay="3000"
+                android:layout_height="100dp"
+                app:rollviewpager_play_delay="6000"
                 android:layout_below="@id/homepage"
+                android:layout_marginTop="@dimen/top"
                 ></com.jude.rollviewpager.RollPagerView>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/business_list"
+                android:layout_below="@+id/ad_roll_pager"
+                android:layout_marginTop="@dimen/top">
+
+            </ListView>
         </RelativeLayout>
 
     </ScrollView>

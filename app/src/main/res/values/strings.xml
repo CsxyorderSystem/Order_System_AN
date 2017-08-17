@@ -23,6 +23,13 @@
     <string name="login_error">用户名不能为空</string>
     <string name="Location_info">设置定位信息</string>
     <string name="mael_time">用餐时间</string>
+    <string name="breakfest">早餐</string>
+    <string name="lunch">午餐</string>
+    <string name="dinner">晚餐</string>
+    <string name="set_breakfest">设置早餐时间</string>
+    <string name="set_lunch">设置午餐时间</string>
+    <string name="set_dinner">设置晚餐时间</string>
+
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email

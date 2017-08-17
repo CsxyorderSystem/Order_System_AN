@@ -17,9 +17,7 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginAndSign.LoginActivity"
-            android:label="@string/title_activity_login">
-
-        </activity>
+            android:label="@string/title_activity_login"></activity>
         <activity
             android:name=".LoginAndSign.RegisterActivity"
             android:label="@string/title_activity_register" />
@@ -28,6 +26,9 @@
         <activity
             android:name=".UserMainActivity"
             android:label="@string/title_activity_user_main">
+
+        </activity>
+        <activity android:name=".MealTimeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
