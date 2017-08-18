@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.a206170.order_system.HomeFragment"
+    tools:context="com.example.a206170.order_system.UserUI.HomeFragment"
     android:background="@color/grey">
 
     <!-- TODO: Update blank fragment layout -->
@@ -38,7 +38,7 @@
                         android:textColor="@color/white" />
 
                     <TextView
-                        android:id="@+id/meal_time"
+                        android:id="@+id/set_meal_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignEnd="@+id/homepage1"
@@ -70,14 +70,14 @@
                 android:layout_below="@id/homepage"
                 android:layout_marginTop="@dimen/top"
                 ></com.jude.rollviewpager.RollPagerView>
-            <ListView
+            <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/business_list"
                 android:layout_below="@+id/ad_roll_pager"
                 android:layout_marginTop="@dimen/top">
 
-            </ListView>
+            </android.support.v7.widget.RecyclerView>
         </RelativeLayout>
 
     </ScrollView>

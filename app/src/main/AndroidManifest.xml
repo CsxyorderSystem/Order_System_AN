@@ -17,24 +17,23 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginAndSign.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
         <activity
             android:name=".LoginAndSign.RegisterActivity"
             android:label="@string/title_activity_register" />
         <activity android:name=".LoginAndSign.ForgetPasswordActivity" />
         <activity android:name=".LoginAndSign.ChangePasswordActivity" />
         <activity
-            android:name=".UserMainActivity"
-            android:label="@string/title_activity_user_main">
-
-        </activity>
-        <activity android:name=".MealTimeActivity">
+            android:name=".UserUI.UserMainActivity"
+            android:label="@string/title_activity_user_main"></activity>
+        <activity android:name=".UserUI.MealTimeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UserUI.BusinessMenuActivity"></activity>
     </application>
 
 </manifest>
