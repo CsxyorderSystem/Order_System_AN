@@ -6,6 +6,9 @@
     <dimen name="top">10dp</dimen>
 
     <dimen name="title_font_size">30dp</dimen>
+    <dimen name="business_name">20dp</dimen>
+
+    <dimen name="business_image">60dp</dimen>
 
 
 </resources>

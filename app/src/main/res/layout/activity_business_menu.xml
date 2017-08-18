@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.a206170.order_system.UserUI.BusinessMenuActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/business_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/top"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/business_image"
+                android:layout_height="@dimen/business_image" />
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin">
+               <TextView
+                   android:id="@+id/business_menu_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/business_name"
 
+                   android:text="TestTestTest"/>
+               <TextView
+                   android:id="@+id/business_detail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/white"
+                   android:text="testtesttesttesttesttesttesttesttesttesttesttesttesttest"
+                   />
+           </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>
