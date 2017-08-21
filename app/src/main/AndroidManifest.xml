@@ -10,6 +10,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:windowSoftInputMode="stateVisible|adjustResize"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -17,7 +18,10 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginAndSign.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="@string/title_activity_login"
+            >
+
+        </activity>
         <activity
             android:name=".LoginAndSign.RegisterActivity"
             android:label="@string/title_activity_register" />
@@ -29,10 +33,21 @@
         <activity android:name=".UserUI.MealTimeActivity">
 
         </activity>
-        <activity android:name=".UserUI.Business_menu.BusinessMenuActivity">
+        <activity android:name=".UserUI.BusinessMenuActivity">
+
+        </activity>
+        <activity android:name=".BusinessUI.business_main">
+
+        </activity>
+        <activity android:name=".BusinessUI.business_register_main"
+           >
+
+        </activity>
+        <activity android:name=".BusinessUI.business_register_first"
+            android:label="第1步 店铺信息"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
