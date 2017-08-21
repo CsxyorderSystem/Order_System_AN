@@ -29,7 +29,7 @@
         <activity android:name=".UserUI.MealTimeActivity">
 
         </activity>
-        <activity android:name=".UserUI.BusinessMenuActivity">
+        <activity android:name=".UserUI.Business_menu.BusinessMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

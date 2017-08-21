@@ -30,6 +30,12 @@
     <string name="set_lunch">设置午餐时间</string>
     <string name="set_dinner">设置晚餐时间</string>
 
+
+    <string name="menu_name">菜单</string>
+    <string name="dish_name">菜名</string>
+    <string name="shopcart">购物车</string>
+    <string name="clear">清空</string>
+
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
