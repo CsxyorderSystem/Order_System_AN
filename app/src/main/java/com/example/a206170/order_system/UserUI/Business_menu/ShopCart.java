@@ -32,7 +32,7 @@ public class ShopCart {
         return shoppingSingle;
     }
 
-    //添加菜品
+    //添加菜品至购物车
     public boolean addShoppingSingle(Food_domain food){
 
         //计算数量
@@ -44,12 +44,14 @@ public class ShopCart {
         shoppingSingle.put(food,num);
         Log.e("TAG", "addShoppingSingle: "+shoppingSingle.get(food));
 
+        //计算单样菜品总价
         shoppingTotalPrice += food.getF_price();
         shoppingAccount++;
         return true;
     }
 
 
+    //删除购物车内菜品
     public boolean subShoppingSingle(Food_domain food){
         int num = 0;
         if(shoppingSingle.containsKey(food)){
@@ -60,6 +62,7 @@ public class ShopCart {
 
         shoppingSingle.put(food,num);
         if (num ==0) shoppingSingle.remove(food);
+
 
         shoppingTotalPrice -= food.getF_price();
         shoppingAccount--;
