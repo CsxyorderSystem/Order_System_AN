@@ -70,6 +70,7 @@ public class ShopCart {
         return shoppingSingle.size();
     }
 
+    //清空购物车
     public void clear(){
         this.shoppingAccount = 0;
         this.shoppingTotalPrice = 0;

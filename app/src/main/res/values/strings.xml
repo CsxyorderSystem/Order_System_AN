@@ -32,12 +32,17 @@
     <string name="add">点击添加店铺+</string>
     <string name="nullof">空空如也</string>
     <string name="nameofcanteen">请输入您的店铺的名称</string>
-    <string name="chooseofcanteen">请选择经营品类                                             ></string>
+    <string name="chooseofcanteen">请选择经营品类></string>
     <string name="showyourcanteen">先简单介绍一下您的店铺吧</string>
     <string name="goinfo">去开店</string>
     <string name="province">省-市-地区                       ></string>
     <string name="street">请填写详细地址</string>
     <string name="up">立即上传></string>
+
+    <string name="menu_name">菜单</string>
+    <string name="dish_name">菜名</string>
+    <string name="shopcart">购物车</string>
+    <string name="clear">清空</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
