@@ -82,7 +82,7 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
         tabhost.setup();
         //创建Tab标签
         tabhost.addTab(tabhost.newTabSpec("one").setIndicator("商品").setContent(R.id._business_menu));
-        tabhost.addTab(tabhost.newTabSpec("two").setIndicator("评价").setContent(R.id.widget_layout_yellow));
+        tabhost.addTab(tabhost.newTabSpec("two").setIndicator("评价").setContent(R.id._business_estimate));
 
     }
     //监听标题栏
@@ -151,7 +151,7 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
                             headerView.setText(Food_Type.getF_type());
                             for (int i = 0; i < dishMenuList.size(); i++) {
                                 if (dishMenuList.get(i) ==Food_Type) {
-                                    FoodTypeAdapter.setSelectedNum(i);
+                                    foodTypeAdapter.setSelectedNum(i);
                                     break;
                                 }
                             }
@@ -183,7 +183,7 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
 
     //
     private void initHeadView(){
-        Food_Type = FoodAdapter.getTypeOfTypeByPosition(0);
+        Food_Type = foodAdapter.getTypeOfTypeByPosition(0);
         headerLayout.setContentDescription("0");
         headerView.setText(Food_Type.getF_type());
     }
@@ -198,30 +198,14 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
             headerView.setText(Food_Type.getF_type());
             for (int i = 0; i < dishMenuList.size(); i++) {
                 if (dishMenuList.get(i) == Food_Type) {
-                    FoodTypeAdapter.setSelectedNum(i);
+                    foodTypeAdapter.setSelectedNum(i);
                     break;
                 }
             }
         }
     }
 
-    //弹出购物车
-    private void showCart(View view) {
-        if(shopCart!=null&&shopCart.getShoppingAccount()>0){
-            ShopCartDialog dialog=new ShopCartDialog(this,shopCart,R.style.cartdialog);
-            Window window=dialog.getWindow();
-            dialog.setShopCartDialogImp(this);
-            dialog.setCanceledOnTouchOutside(true);
-            dialog.setCancelable(true);
-            dialog.show();
-            WindowManager.LayoutParams params=window.getAttributes();
-            params.width = WindowManager.LayoutParams.MATCH_PARENT;
-            params.height = WindowManager.LayoutParams.WRAP_CONTENT;
-            params.gravity = Gravity.BOTTOM;
-            params.dimAmount =0.5f;
-            window.setAttributes(params);
-        }
-    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -337,7 +321,68 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
     }
 
     private void initData(){
-        shopCart=new ShopCart();
-        dishMenuList=new ArrayList<>();
+        shopCart = new ShopCart();
+        dishMenuList = new ArrayList<>();
+        ArrayList<Food_domain> dishs1 = new ArrayList<>();
+        dishs1.add(new Food_domain("面包",1.0,10));
+        dishs1.add(new Food_domain("蛋挞",1.0,10));
+        dishs1.add(new Food_domain("牛奶",1.0,10));
+        dishs1.add(new Food_domain("肠粉",1.0,10));
+        dishs1.add(new Food_domain("绿茶饼",1.0,10));
+        dishs1.add(new Food_domain("花卷",1.0,10));
+        dishs1.add(new Food_domain("包子",1.0,10));
+        Food_Type_domain breakfast = new Food_Type_domain("早点",dishs1);
+
+        ArrayList<Food_domain> dishs2 = new ArrayList<>();
+        dishs2.add(new Food_domain("粥",1.0,10));
+        dishs2.add(new Food_domain("炒饭",1.0,10));
+        dishs2.add(new Food_domain("炒米粉",1.0,10));
+        dishs2.add(new Food_domain("炒粿条",1.0,10));
+        dishs2.add(new Food_domain("炒牛河",1.0,10));
+        dishs2.add(new Food_domain("炒菜",1.0,10));
+        Food_Type_domain launch = new Food_Type_domain("午餐",dishs2);
+
+        ArrayList<Food_domain> dishs3 = new ArrayList<>();
+        dishs3.add(new Food_domain("淋菜",1.0,10));
+        dishs3.add(new Food_domain("川菜",1.0,10));
+        dishs3.add(new Food_domain("湘菜",1.0,10));
+        dishs3.add(new Food_domain("粤菜",1.0,10));
+        dishs3.add(new Food_domain("赣菜",1.0,10));
+        dishs3.add(new Food_domain("东北菜",1.0,10));
+        Food_Type_domain evening = new Food_Type_domain("晚餐",dishs3);
+
+        ArrayList<Food_domain> dishs4 = new ArrayList<>();
+        dishs4.add(new Food_domain("淋菜",1.0,10));
+        dishs4.add(new Food_domain("川菜",1.0,10));
+        dishs4.add(new Food_domain("湘菜",1.0,10));
+        dishs4.add(new Food_domain("粤菜",1.0,10));
+        dishs4.add(new Food_domain("赣菜",1.0,10));
+        dishs4.add(new Food_domain("东北菜",1.0,10));
+        Food_Type_domain menu1 = new Food_Type_domain("晚餐",dishs3);
+
+        dishMenuList.add(breakfast);
+        dishMenuList.add(launch);
+        dishMenuList.add(evening);
+        dishMenuList.add(menu1);
+
+
     }
+    //弹出购物车
+    private void showCart(View view) {
+        if(shopCart!=null&&shopCart.getShoppingAccount()>0){
+            ShopCartDialog dialog=new ShopCartDialog(this,shopCart,R.style.cartdialog);
+            Window window=dialog.getWindow();
+            dialog.setShopCartDialogImp(this);
+            dialog.setCanceledOnTouchOutside(true);
+            dialog.setCancelable(true);
+            dialog.show();
+            WindowManager.LayoutParams params=window.getAttributes();
+            params.width = WindowManager.LayoutParams.MATCH_PARENT;
+            params.height = WindowManager.LayoutParams.WRAP_CONTENT;
+            params.gravity = Gravity.BOTTOM;
+            params.dimAmount =0.5f;
+            window.setAttributes(params);
+        }
+    }
+
 }
