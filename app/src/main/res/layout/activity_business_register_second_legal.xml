@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout4">
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果没有营业执照，可上传特许证件"
+            android:gravity="center"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/linearLayout4"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/small_red_circle" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/legalfront"
+        android:layout_marginTop="16dp"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/adtest2"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/legalback"
+        android:layout_marginTop="16dp"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/adtest2"
+        android:layout_below="@+id/legalfront"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/legalback"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="法人代表姓名"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/legalname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:textSize="18dp"
+                android:hint="法人代表姓名"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="法人身份证号"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/legalnumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:textSize="18dp"
+                android:hint="输入身份证号"
+                />
+        </LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/save"
+    android:text="@string/save"
+    android:textSize="18dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

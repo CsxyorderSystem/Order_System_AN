@@ -66,13 +66,22 @@
         <activity android:name=".BusinessUI.business_register_second_lincense"
             android:label="营业执照上传 "
             >
+        </activity>
+
+        <activity android:name=".BusinessUI.business_register_second_lagel"
+            android:label="法人身份证照 "
+            >
+
+        </activity>
+        <activity android:name=".BusinessUI.business_register_second_permission"
+            android:label="许可证上传 "
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-
-
 
     </application>
 </manifest>

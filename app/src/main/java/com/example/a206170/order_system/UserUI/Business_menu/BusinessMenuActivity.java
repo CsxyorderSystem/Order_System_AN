@@ -151,7 +151,7 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
                             headerView.setText(Food_Type.getF_type());
                             for (int i = 0; i < dishMenuList.size(); i++) {
                                 if (dishMenuList.get(i) ==Food_Type) {
-                                    FoodTypeAdapter.setSelectedNum(i);
+                                    foodTypeAdapter.setSelectedNum(i);
                                     break;
                                 }
                             }
@@ -198,7 +198,7 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
             headerView.setText(Food_Type.getF_type());
             for (int i = 0; i < dishMenuList.size(); i++) {
                 if (dishMenuList.get(i) == Food_Type) {
-                    FoodTypeAdapter.setSelectedNum(i);
+                    foodTypeAdapter.setSelectedNum(i);
                     break;
                 }
             }
