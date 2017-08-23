@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.example.a206170.order_system.R;
@@ -14,27 +15,28 @@ import com.example.a206170.order_system.R;
  * Created by 206170 on 2017/8/23.
  */
 
-public class business_register_second_lagel extends AppCompatActivity {
-    Button save;
-    EditText legalname,legalnumber;
-    ImageView i1,i2;
+public class businesss_register_second_gathering  extends AppCompatActivity {
+    TextView openingbank,branchbank;
+    EditText gatheringname,gatheringcard;
+    RadioButton toself,topublic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_business_register_second_legal);
+        setContentView(R.layout.activity_business_register_second_gathering);
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
+        if(actionBar != null){
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
-            save=(Button)findViewById(R.id.save);
-            legalname=(EditText)findViewById(R.id.legalname);
-            legalnumber=(EditText)findViewById(R.id.legalnumber);
-            i1=(ImageView)findViewById(R.id.legalfront);
-            i2=(ImageView)findViewById(R.id.legalback);
-            ///以上为实例化对象
-        }
-    }
 
+        }
+        openingbank=(TextView)findViewById(R.id.openingbank);
+        branchbank=(TextView)findViewById(R.id.branchbank);
+        gatheringname=(EditText)findViewById(R.id.gatheringname);
+        gatheringcard=(EditText)findViewById(R.id.gatheringcard);
+        toself=(RadioButton)findViewById(R.id.toself);
+        topublic=(RadioButton)findViewById(R.id.topublic);
+        ///以上为实例化对象
+    }
     //以下是设置返回按钮
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

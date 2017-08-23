@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +15,9 @@ import com.example.a206170.order_system.R;
  */
 
 public class business_register_second_permission extends AppCompatActivity {
+    Button save;
+    EditText permissionname,legalname,permissionnumber,permissionplace;
+    TextView permissiondate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +26,12 @@ public class business_register_second_permission extends AppCompatActivity {
         if(actionBar != null){
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);}
+        save=(Button)findViewById(R.id.save);
+        permissionname=(EditText)findViewById(R.id.permissionname);
+        legalname=(EditText)findViewById(R.id.legalname);
+        permissionnumber=(EditText)findViewById(R.id.permissionnumber);
+        permissionplace=(EditText)findViewById(R.id.permissionplace);
+        permissiondate=(TextView)findViewById(R.id.dateoff);
         ///以上为实例化对象
     }
     //以下是设置返回按钮

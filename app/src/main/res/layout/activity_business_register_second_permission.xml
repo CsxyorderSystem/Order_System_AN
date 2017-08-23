@@ -37,6 +37,7 @@
                 android:gravity="center_vertical|right"
                 android:textSize="18dp"
                 android:hint="输入许可证名称"
+                android:layout_marginRight="10dp"
                 />
         </LinearLayout>
 
@@ -57,6 +58,7 @@
                 android:background="@null"
                 android:gravity="center_vertical|right"
                 android:textSize="18dp"
+                android:layout_marginRight="10dp"
                 android:hint="法人代表姓名"
                 />
         </LinearLayout>
@@ -78,6 +80,7 @@
                 android:background="@null"
                 android:gravity="center_vertical|right"
                 android:textSize="18dp"
+                android:layout_marginRight="10dp"
                 android:hint="输入许可证注册号"
                 />
         </LinearLayout>
@@ -99,6 +102,7 @@
                 android:background="@null"
                 android:gravity="center_vertical|right"
                 android:textSize="18dp"
+                android:layout_marginRight="10dp"
                 android:hint="输入许可证所在地"
                 />
         </LinearLayout>
@@ -120,6 +124,7 @@
                android:text="请选择日期"
                android:gravity="center|right"
                android:textSize="18dp"
+               android:layout_marginRight="10dp"
                />
         </LinearLayout>
         <Button

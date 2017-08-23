@@ -34,10 +34,6 @@
 
         </activity>
         <activity android:name=".UserUI.Business_menu.BusinessMenuActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity android:name=".BusinessUI.business_main">
@@ -76,11 +72,14 @@
         <activity android:name=".BusinessUI.business_register_second_permission"
             android:label="许可证上传 "
             >
+        </activity>
+        <activity android:name=".BusinessUI.businesss_register_second_gathering"
+            android:label="第3步 收款信息 "
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
     </application>
