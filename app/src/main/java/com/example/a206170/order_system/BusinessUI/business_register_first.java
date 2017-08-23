@@ -54,6 +54,7 @@ public class business_register_first extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    ///
     public void input(){
         String value=info.getText().toString();
         String value2=person.getText().toString();

@@ -42,15 +42,33 @@
         <activity android:name=".BusinessUI.business_register_main"
            >
 
+
         </activity>
         <activity android:name=".BusinessUI.business_register_first"
             android:label="第1步 店铺信息"
+            >
+
+        </activity>
+        <activity android:name=".BusinessUI.business_register_first_upphoto"
+            android:label="上传店铺照片"
+            >
+
+        </activity>
+        <activity android:name=".BusinessUI.business_register_second"
+            android:label="第2步 资质信息 "
+            >
+
+        </activity>
+        <activity android:name=".BusinessUI.business_register_second_lincense"
+            android:label="营业执照上传 "
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+
+
+    </application>
 </manifest>

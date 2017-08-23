@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所上传图片将用于展示用户"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门店图"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView4" />
+        <ImageView
+            android:id="@+id/outside"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/adtest2"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要排除完整的门匾、门框\n(建议正对门店2米出拍摄)"
+            android:layout_below="@+id/show1"
+            android:layout_toStartOf="@+id/show1"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:textColor="#3366cc"
+            android:text="@string/example"
+            android:layout_alignTop="@+id/outside"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:id="@+id/up1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/upsteam"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/show1"
+            android:layout_marginEnd="12dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店内环境图"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/inside"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            app:srcCompat="@drawable/adtest2" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实店铺内部照片\n（包括收银台、桌椅等）"
+            android:layout_below="@+id/show2"
+            android:layout_alignEnd="@+id/up2" />
+        <TextView
+            android:id="@+id/show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/relativeLayout3"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="11dp"
+            android:textColor="#3366cc"
+            android:text="@string/example" />
+        <Button
+            android:id="@+id/up2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/upsteam"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/show2"
+            android:layout_marginEnd="11dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门店LOGO"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView6" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/adtest2"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要体现线店铺的标志\n可以吸引用户进行点餐"
+            android:layout_below="@+id/show3"
+            android:layout_alignEnd="@+id/up3" />
+
+        <TextView
+            android:id="@+id/show3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout4"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="31dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="#3366cc"
+            android:text="@string/example"/>
+        <Button
+            android:id="@+id/up3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/upsteam"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/show3"
+            android:layout_marginEnd="11dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

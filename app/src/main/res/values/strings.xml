@@ -38,16 +38,22 @@
     <string name="province">省-市-地区                       ></string>
     <string name="street">请填写详细地址</string>
     <string name="up">立即上传></string>
-
+    <string name="upsteam">上传</string>
+    <string name="reup">重新上传</string>
     <string name="menu_name">菜单</string>
     <string name="dish_name">菜名</string>
     <string name="shopcart">购物车</string>
     <string name="clear">清空</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="wait">待填写></string>
+    <string name="save">保存</string>
+    <string name="longtime">长期有效</string>
+    <string name="dateoff">固定有效期</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="example">示例图</string>
     <string-array name="user_type">
         <item>个人</item>
         <item>团队</item>
