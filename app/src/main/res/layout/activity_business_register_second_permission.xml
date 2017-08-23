@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+        android:id="@+id/upphoto"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/adtest1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/upphoto"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="许可证名称" />
+            <EditText
+                android:id="@+id/permissionname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:textSize="18dp"
+                android:hint="输入许可证名称"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="法人代表姓名" />
+            <EditText
+                android:id="@+id/legalname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:hint="法人代表姓名"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="许可证注册号" />
+            <EditText
+                android:id="@+id/permissionnumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:hint="输入许可证注册号"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="许可证所在地" />
+            <EditText
+                android:id="@+id/permissionplace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:hint="输入许可证所在地"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="许可证有效期" />
+           <TextView
+               android:id="@+id/dateoff"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="请选择日期"
+               android:gravity="center|right"
+               android:textSize="18dp"
+               android:layout_marginRight="10dp"
+               />
+        </LinearLayout>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/save"/>
+
+    </LinearLayout>
+</RelativeLayout>
