@@ -20,11 +20,13 @@ public class FoodTypeAdapter extends RecyclerView.Adapter{
     private int mSelectedNum;
     private List<onItemSelectedListener> mSelectedListenerList;
 
+
+
     public interface onItemSelectedListener{
         public void onLeftItemSelected(int postion,Food_Type_domain type);
     }
 
-    public void addItemSelectedListener(onItemSelectedListener listener){
+    public void addItemSelectedListener(BusinessMenuActivity listener){
         if(mSelectedListenerList!=null)
             mSelectedListenerList.add(listener);
     }
@@ -79,6 +81,8 @@ public class FoodTypeAdapter extends RecyclerView.Adapter{
     public int getSelectedNum() {
         return mSelectedNum;
     }
+
+
     private class LeftMenuViewHolder extends RecyclerView.ViewHolder{
         TextView F_type;
         LinearLayout menuLayout;
