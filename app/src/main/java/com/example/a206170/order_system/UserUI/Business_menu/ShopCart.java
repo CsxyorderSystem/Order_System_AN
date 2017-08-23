@@ -45,7 +45,7 @@ public class ShopCart {
         Log.e("TAG", "addShoppingSingle: "+shoppingSingle.get(food));
 
         //计算单样菜品总价
-        shoppingTotalPrice += food.getF_price();
+        shoppingTotalPrice += food.getF_Price();
         shoppingAccount++;
         return true;
     }
@@ -64,7 +64,7 @@ public class ShopCart {
         if (num ==0) shoppingSingle.remove(food);
 
 
-        shoppingTotalPrice -= food.getF_price();
+        shoppingTotalPrice -= food.getF_Price();
         shoppingAccount--;
         return true;
     }

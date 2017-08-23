@@ -74,8 +74,8 @@ public class FoodAdapter extends RecyclerView.Adapter{
                 final FoodViewHolder foodViewHolder=(FoodViewHolder)holder;
                 if(foodViewHolder!=null){
                     final Food_domain food=getFoodByPosition(position);
-                    foodViewHolder.right_dish_name_tv.setText(food.getF_name());
-                    foodViewHolder.right_dish_price_tv.setText(food.getF_price()+"");
+                    foodViewHolder.right_dish_name_tv.setText(food.getF_Name());
+                    foodViewHolder.right_dish_price_tv.setText(food.getF_Price()+"");
                     foodViewHolder.right_dish_layout.setContentDescription(position+"");
 
                     //添加移除按钮
@@ -144,7 +144,7 @@ public class FoodAdapter extends RecyclerView.Adapter{
     }
 
     //
-    public static Food_Type_domain getTypeOfTypeByPosition(int position){
+    public  Food_Type_domain getTypeOfTypeByPosition(int position){
         for(Food_Type_domain type:food_typeList){
             if (position==0)return type;
             if(position>0&&position<=type.getFood_list().size()){

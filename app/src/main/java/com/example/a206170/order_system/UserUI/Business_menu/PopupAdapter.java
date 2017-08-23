@@ -50,8 +50,8 @@ public class PopupAdapter extends RecyclerView.Adapter {
         FoodViewHolder foodViewHolder=(FoodViewHolder)holder;
         final Food_domain food= getDishByPosition(position);
         if(food!=null){
-            foodViewHolder.right_dish_name_tv.setText(food.getF_name());
-            foodViewHolder.right_dish_price_tv.setText(food.getF_price()+"");
+            foodViewHolder.right_dish_name_tv.setText(food.getF_Name());
+            foodViewHolder.right_dish_price_tv.setText(food.getF_Price()+"");
             int num = shopCart.getShoppingSingleMap().get(food);
             foodViewHolder.right_dish_account_tv.setText(num+"");
 

@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.a206170.order_system.UserUI.Business_menu.BusinessMenuActivity">
 
-<RelativeLayout
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <RelativeLayout
         android:id="@+id/business_form"
         android:layout_width="match_parent"
@@ -64,20 +65,22 @@
 
             <TabWidget
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@android:id/tabs"
                 ></TabWidget>
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="370dp"
                 android:id="@android:id/tabcontent"
+
                 >
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/_business_menu">
+
+
                     <LinearLayout
                         android:id="@+id/shopping_cart_bottom"
                         android:layout_width="match_parent"
@@ -160,18 +163,60 @@
                 </RelativeLayout>
 
 
+
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/widget_layout_yellow"
-                    android:background="#FCD209"
-                    android:orientation="vertical"
-                    ></LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/_business_estimate"
+                    android:orientation="horizontal"
+                    android:showDividers="middle"
+                    android:layout_marginTop="@dimen/top"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/business_estimate_form"
 
-            </FrameLayout>
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/estimate_mark"
+                            android:text="4.4"
+                            android:textSize="@dimen/estimate_mark_size"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estimate"
+                            android:layout_marginTop="@dimen/top"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+           </FrameLayout>
         </LinearLayout>
     </TabHost>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </ScrollView>
