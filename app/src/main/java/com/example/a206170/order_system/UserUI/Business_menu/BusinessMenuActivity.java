@@ -50,6 +50,7 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
     private TextView totalPriceNumTextView;
     private RelativeLayout mainLayout;
     private final static String TAG = "BusinessMenuActivity";
+    private String BusinessName;
 
 
 
@@ -58,13 +59,15 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        //去除标题栏阴影
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_business_menu);
+
 
         initData();
         initView();
         initAdapter();
+        //
+        setTitle(BusinessName);
 
         //返回按钮
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();

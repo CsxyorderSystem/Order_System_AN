@@ -35,5 +35,7 @@
     <dimen name="shopping_cart_small_size">15sp</dimen>
     <dimen name="shopping_cart_bottom_recycle_height">250dp</dimen>
 
+    <dimen name="estimate_image_size">100dp</dimen>
+
 
 </resources>

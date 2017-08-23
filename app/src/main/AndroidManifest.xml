@@ -29,15 +29,15 @@
         <activity android:name=".LoginAndSign.ChangePasswordActivity" />
         <activity
             android:name=".UserUI.UserMainActivity"
-            android:label="@string/title_activity_user_main"></activity>
-        <activity android:name=".UserUI.MealTimeActivity">
-
-        </activity>
-        <activity android:name=".UserUI.Business_menu.BusinessMenuActivity">
+            android:label="@string/title_activity_user_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".UserUI.Business_menu.BusinessMenuActivity">
+
 
         </activity>
         <activity android:name=".BusinessUI.business_main">
@@ -66,10 +66,7 @@
         <activity android:name=".BusinessUI.business_register_second_lincense"
             android:label="营业执照上传 "
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
 
