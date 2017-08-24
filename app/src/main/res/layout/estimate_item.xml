@@ -3,4 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/shopping_cart_circle_size"
+        android:layout_height="@dimen/shopping_cart_circle_size"
+        android:src="@drawable/adtest1"
+        />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"/>
+        <ImageView
+            android:layout_width="@dimen/estimate_image_size"
+            android:layout_height="@dimen/estimate_image_size"
+            android:src="@drawable/adtest2"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
 </LinearLayout>
