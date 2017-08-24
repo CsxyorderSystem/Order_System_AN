@@ -70,14 +70,15 @@
                 android:layout_below="@id/homepage"
                 android:layout_marginTop="@dimen/top"
                 ></com.jude.rollviewpager.RollPagerView>
-            <android.support.v7.widget.RecyclerView
+            <ListView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/business_list"
                 android:layout_below="@+id/ad_roll_pager"
+                android:background="@color/white"
                 android:layout_marginTop="@dimen/top">
 
-            </android.support.v7.widget.RecyclerView>
+            </ListView>
         </RelativeLayout>
 
     </ScrollView>

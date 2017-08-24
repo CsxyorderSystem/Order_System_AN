@@ -35,5 +35,4 @@ dependencies {
     compile 'com.android.support:support-v4:26.+'
     compile 'com.jude:rollviewpager:1.2.9'
     testCompile 'junit:junit:4.12'
-
 }

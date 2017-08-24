@@ -16,12 +16,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.a206170.order_system.R;
 import com.example.a206170.order_system.UserUI.Business_menu.wiget.FakeAddImageView;
@@ -55,6 +57,7 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -75,7 +78,16 @@ public class BusinessMenuActivity extends AppCompatActivity implements FoodTypeA
         if(actionBar != null){
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setCustomView(R.layout.action_bar);
+            Button next_btn=(Button)actionBar.getCustomView().findViewById(R.id.next_button);
+            next_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(getApplicationContext(),"标题栏按钮测试",Toast.LENGTH_SHORT).show();
+                }
+            });
         }
+
 
         //声明tabhost
 

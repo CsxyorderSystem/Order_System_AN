@@ -3,7 +3,7 @@
     android:id="@+id/left_menu_item"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:background="@drawable/selector_item_select"
     android:clickable="true"
@@ -12,7 +12,7 @@
     <TextView
         android:id="@+id/left_menu_textview"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/item_dish_top_margin"
         android:layout_marginBottom="@dimen/item_dish_top_margin"
         android:text="@string/menu_name"

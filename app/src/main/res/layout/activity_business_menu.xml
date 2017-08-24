@@ -72,8 +72,9 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="370dp"
+                android:layout_height="390dp"
                 android:id="@android:id/tabcontent"
+
 
                 >
                 <RelativeLayout
@@ -107,7 +108,9 @@
                         android:layout_above="@+id/shopping_cart_bottom"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:gravity="bottom"
+                        android:layout_marginBottom="0dp">
 
                         <android.support.v7.widget.RecyclerView
                             android:id="@+id/left_menu"
@@ -175,50 +178,13 @@
                     android:id="@+id/_business_estimate"
                     android:orientation="vertical"
 
+
                     android:layout_marginTop="@dimen/top"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
                     android:layout_marginRight="@dimen/activity_horizontal_margin"
                     >
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/business_estimate_form"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin">
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
 
-
-                            android:orientation="vertical"
-                            android:gravity="center"
-                            >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/estimate_mark"
-                                android:text="4.4"
-                                android:textSize="@dimen/estimate_mark_size"
-                                android:textColor="@color/colorPrimary"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/estimate"
-                                android:layout_marginTop="@dimen/top"
-                                />
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="@dimen/activity_horizontal_margin">
-                            <RatingBar
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <include layout="@layout/estimate_item" />
+                    <include layout="@layout/estimate_layout"/>
 
 
 
