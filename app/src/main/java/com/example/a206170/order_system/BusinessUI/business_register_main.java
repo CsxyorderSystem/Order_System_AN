@@ -1,5 +1,6 @@
 package com.example.a206170.order_system.BusinessUI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,29 +27,16 @@ public class business_register_main extends AppCompatActivity {
         textView.setKeyListener(null);
         button=(Button)findViewById(R.id.button);
         ///实例化对象
-        textView.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-            }
-        });
-        //以上是textview的监听器
-        editText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-
-        });
-        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                if(!b){
-                    input();
+                switch (view.getId()){
+                    case R.id.button:
+                        intent();
                 }
             }
-        });
-        //以上是edittext的监听器
+        };
+        button.setOnClickListener(listener);
 
     }
     public void input(){
@@ -61,5 +49,11 @@ public class business_register_main extends AppCompatActivity {
                 textView.setError("请选择当前项");
     }
         //以上是判断输入框是否为空的提示
+}
+//以下是跳转至注册店铺界面得第一步
+public void intent(){
+    Intent intent=new Intent(business_register_main.this,business_register_first.class);
+    startActivity(intent);
+
 }
 }

@@ -1,5 +1,6 @@
 package com.example.a206170.order_system.BusinessUI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Layout;
@@ -7,6 +8,7 @@ import android.text.Selection;
 import android.text.Spannable;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -21,7 +23,8 @@ import com.example.a206170.order_system.R;
 
 public class business_register_first extends AppCompatActivity {
     EditText province,info,person,phone;
-
+    TextView photoup;
+    LinearLayout l;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +43,24 @@ public class business_register_first extends AppCompatActivity {
         person=(EditText)findViewById(R.id.nameedit);
         phone=(EditText)findViewById(R.id.phone);
         button=(Button)findViewById(R.id.button);
+        photoup=(TextView) findViewById(R.id.photoup);
+        l=(LinearLayout)findViewById(R.id.photo);
         ///以上为实例化对象
+        View.OnClickListener listener=new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()){
+                    case R.id.photo:
+                        photo();
+                        break;
+                    case R.id.button:
+                        intent();
+                    break;
+                }
+            }
+        };
+        l.setOnClickListener(listener);
+        button.setOnClickListener(listener);
     }
 //添加监听器的时候记得加入input方法提示是否为空
 
@@ -70,4 +90,15 @@ public class business_register_first extends AppCompatActivity {
         }
         //以上是判断输入框是否为空的提示
     }
+    //以下是跳转到上传图片得界面
+    public void photo(){
+        Intent intent=new Intent(business_register_first.this,business_register_first_upphoto.class);
+        startActivity(intent);
+    }
+    //以下是跳转到注册第二步界面
+    public void intent(){
+        Intent intent=new Intent(business_register_first.this,business_register_second.class);
+        startActivity(intent);
+    }
+
 }

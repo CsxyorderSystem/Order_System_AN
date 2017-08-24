@@ -20,8 +20,8 @@
     android:layout_below="@+id/textView8"
     android:layout_alignParentStart="true">
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="40dp"
+         android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:orientation="horizontal"
         android:id="@+id/lincense"
         android:layout_alignParentTop="true"
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:textSize="18dp"
-                android:text="法人代表手持身份证"
+                android:text="餐饮服务许可证"
                 android:singleLine="true"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.15" />
@@ -176,7 +176,7 @@
                 android:background="@color/gray"
                 android:layout_marginLeft="12dp"
                 android:gravity="center_vertical"
-                android:text="需上传法人代表或者特许证件申请人手持身份证照，身份证可用其他有效证件代替" />
+                android:text="可用有效特许证件代替许可证" />
         </LinearLayout>
 
 
@@ -186,9 +186,8 @@
         android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/r3"
+        android:text="@string/next_step"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="52dp"
-        android:layout_alignParentEnd="true"
-        android:text="@string/next_step"/>
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

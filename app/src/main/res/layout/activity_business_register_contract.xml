@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="用于记录收款账号信息 "
-        android:layout_marginTop="15dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="12dp"
-        android:textSize="18dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="签约人信息"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="380dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView23"
         android:orientation="vertical"
-        android:id="@+id/linearLayout5"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true">
+        android:id="@+id/linearLayout6">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,9 +26,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="账户类型"
+                android:text="签约人类型"
                 android:textSize="18dp"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"/>
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -40,19 +37,20 @@
                 android:layout_marginRight="10dp">
 
                 <RadioButton
-                    android:id="@+id/toself"
+                    android:id="@+id/self"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="对私"
+                    android:text="个人"
                     android:layout_gravity="center_vertical"/>
                 <RadioButton
-                    android:id="@+id/topublic"
+                    android:id="@+id/lincense"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="对公"
+                    android:text="企业法人"
                     android:layout_gravity="center_vertical"/>
             </RadioGroup>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,19 +59,35 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="开户人姓名"
+                android:text="签约人姓名"
                 android:textSize="18dp"
-                android:layout_gravity="center_vertical" />
-
+                android:layout_gravity="center_vertical"/>
             <EditText
-                android:id="@+id/gatheringname"
+                android:id="@+id/contract"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:layout_marginRight="10dp"
                 android:gravity="center_vertical|right"
-                android:hint="输入开户人姓名" />
+                android:hint="输入签约人姓名" />
         </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_marginTop="14dp"
+        android:text="签约人实名认证" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView24"
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -81,19 +95,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="银行卡号"
+                android:text="身份证号"
                 android:textSize="18dp"
-                android:layout_gravity="center_vertical" />
-
+                android:layout_gravity="center_vertical"/>
             <EditText
-                android:id="@+id/gatheringcard"
+                android:id="@+id/idcard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                android:gravity="center_vertical|right"
-                android:hint="输入银行卡号"
                 android:layout_marginRight="10dp"
-                android:inputType="number"/>
+                android:gravity="center_vertical|right"
+                android:hint="输入身份证号" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,18 +114,40 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="开户行"
+                android:text="签约人银行\n(仅支持储蓄卡)"
                 android:textSize="18dp"
-                android:layout_gravity="center_vertical" />
-            <TextView
-                android:id="@+id/openingbank"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/bank"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="请选择开户行>"
-                android:textSize="18dp"
+                android:background="@null"
                 android:layout_marginRight="10dp"
                 android:gravity="center_vertical|right"
-                />
+                android:clickable="false"
+                android:hint="选择签约银行" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="签约人银行卡号"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="number"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|right"
+                android:hint="输入银行卡号" />
         </LinearLayout>
 
         <LinearLayout
@@ -123,30 +157,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="支行"
+                android:text="银行预留手机号"
                 android:textSize="18dp"
-                android:layout_gravity="center_vertical" />
-            <TextView
-                android:id="@+id/branchbank"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="请选择支行>"
+                android:background="@null"
                 android:layout_marginRight="10dp"
-                android:textSize="18dp"
+                android:inputType="number"
                 android:gravity="center_vertical|right"
-                />
+                android:hint="输入预存手机" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
+        android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
+        android:text="前往实名认证"
         android:layout_alignParentEnd="true"
-        android:id="@+id/save"
-        android:textSize="18dp"
-        android:text="@string/save"
-        />
-
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
