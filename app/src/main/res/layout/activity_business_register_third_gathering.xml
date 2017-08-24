@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用于记录收款账号信息 "
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户类型"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/toself"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对私"
+                    android:layout_gravity="center_vertical"/>
+                <RadioButton
+                    android:id="@+id/topublic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="对公"
+                    android:layout_gravity="center_vertical"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开户人姓名"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/gatheringname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|right"
+                android:hint="输入开户人姓名" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行卡号"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/gatheringcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="输入银行卡号"
+                android:layout_marginRight="10dp"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开户行"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:id="@+id/openingbank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请选择开户行>"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|right"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支行"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:id="@+id/branchbank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请选择支行>"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"
+                android:gravity="center_vertical|right"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:text="@string/next_step"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
