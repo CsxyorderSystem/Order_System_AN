@@ -37,5 +37,7 @@
 
     <dimen name="estimate_image_size">100dp</dimen>
 
+    <dimen name="page_card_magrin">10dp</dimen>
+
 
 </resources>
