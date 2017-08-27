@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.a206170.order_system.UserUI.Business_menu.OrderConfirmActivity"
     android:background="@color/light_gray">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -117,8 +125,50 @@
 
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="@dimen/title_font_size"
+            android:padding="@dimen/page_card_magrin"/>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:padding="@dimen/page_card_magrin"
+            android:layout_margin="@dimen/page_card_magrin">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/page_card_magrin"
+            android:text="Discount"
+            android:textSize="@dimen/title_font_size"
+            android:layout_weight="1"/>
 
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/page_card_magrin"
+            android:text="@string/ConfirmPay"
+            android:textColor="@color/white"/>
+    </LinearLayout>
 
 
-</ScrollView>
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TabHost;
 
 import com.example.a206170.order_system.R;
 
@@ -30,6 +31,8 @@ public class OrderFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    private TabHost tabhost;
 
     public OrderFragment() {
         // Required empty public constructor
@@ -60,13 +63,29 @@ public class OrderFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+       /* //声明tabhost
+        //调用 TabHost.setup()
+        tabhost.setup();
+
+        //创建Tab标签
+        tabhost.addTab(tabhost.newTabSpec("one").setIndicator("已完成").setContent(R.id.order_finish_layout));
+        tabhost.addTab(tabhost.newTabSpec("two").setIndicator("未完成").setContent(R.id.order_unfinish_layout));*/
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_order, container, false);
+
+        View view =  inflater.inflate(R.layout.fragment_order, container, false);
+        //得到TabHost对象实例
+       tabhost =(TabHost)view.findViewById(R.id.mytab);
+
+        return view;
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

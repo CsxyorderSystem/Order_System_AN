@@ -5,9 +5,21 @@
     tools:context="com.example.a206170.order_system.UserUI.OrderFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="order" />
+   <TabHost
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TabWidget
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@android:id/tabs"
+           >
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="390dp"
+               android:id="@android:id/tabcontent">
+
+           </FrameLayout>
+       </TabWidget>
+   </TabHost>
 
 </FrameLayout>

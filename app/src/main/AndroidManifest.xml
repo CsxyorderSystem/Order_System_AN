@@ -26,7 +26,13 @@
         <activity android:name=".LoginAndSign.ChangePasswordActivity" />
         <activity
             android:name=".UserUI.UserMainActivity"
-            android:label="@string/title_activity_user_main" />
+            android:label="@string/title_activity_user_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".UserUI.MealTimeActivity" />
         <activity android:name=".UserUI.Business_menu.BusinessMenuActivity" />
         <activity android:name=".BusinessUI.business_main" />
@@ -49,15 +55,12 @@
         <activity
             android:name=".BusinessUI.business_register_second_permission"
             android:label="许可证上传 " />
-        <activity android:name=".UserUI.Business_menu.SingleFoodActivity">
+        <activity android:name=".UserUI.Business_menu.SingleFoodActivity"></activity>
+        <activity android:name=".UserUI.Business_menu.OrderConfirmActivity">
 
         </activity>
-        <activity android:name=".UserUI.Business_menu.OrderConfirmActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".UserUI.Business_menu.PayConfirmActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

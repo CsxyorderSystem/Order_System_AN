@@ -45,8 +45,7 @@
     <string name="shopcart">购物车</string>
     <string name="estimate">综合评分</string>
     <string name="clear">清空</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
     <string name="wait">待填写></string>
     <string name="save">保存</string>
     <string name="longtime">长期有效</string>
@@ -63,12 +62,22 @@
 
     <string name="next_step">下一步</string>
     <string name="title_activity_user_main">UserMainActivity</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">订餐计划</string>
+    <string name="title_notifications">订单</string>
+    <string name="title_info">我的</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pushtest">text</string>
 
     <string name="business_info">商家信息</string>
+    <string name="WechatPayWay">微信支付</string>
+    <string name="AlipayPayWay">支付宝支付</string>
+    <string name="cash">现金支付</string>
+    <string name="PayLeftTime">支付剩余时间</string>
+    <string name="￥">￥</string>
+    <string name="ChoosePayWay">选择支付方式</string>
+    <string name="ConfirmPay">确认支付</string>
 
 </resources>
