@@ -1,13 +1,104 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_gray"
     tools:context="com.example.a206170.order_system.UserUI.MyinfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="info" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:weightSum="1">
 
-</FrameLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="130dp"
+               android:id="@+id/myinfo_top"
+               android:background="@color/colorPrimary"
+               android:orientation="horizontal"
+               android:paddingTop="30dp"
+               android:paddingLeft="@dimen/top"
+               android:paddingRight="@dimen/top"
+
+               android:layout_weight="2.13">
+               <ImageView
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:src="@drawable/adtest1"
+                   android:layout_marginRight="@dimen/top"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginTop="@dimen/top"
+                   android:layout_weight="1">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/title_font_size"
+                       android:textColor="@color/white"
+                       android:id="@+id/myinfo_username"
+                       android:text="user_test"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/myinfo_phone"
+                       android:textColor="@color/white"
+                       android:text="132XXXXXXXXX6318"/>
+               </LinearLayout>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="50dp"
+                   android:textColor="@color/white"
+                   android:layout_marginTop="10dp"
+
+                   android:text=">"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/request_management_layout"
+               android:background="@color/white"
+               android:padding="10dp"
+               android:layout_marginTop="@dimen/top">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text="申请管理测试"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:background="@color/white"
+               android:padding="10dp"
+               android:layout_marginTop="@dimen/top">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/total_center"
+                   android:textSize="20dp"
+                   android:text="统计中心测试"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/setting_layout"
+               android:background="@color/white"
+               android:padding="10dp"
+               android:layout_marginTop="@dimen/top">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text="设置中心"/>
+           </LinearLayout>
+       </LinearLayout>
+
+
+</ScrollView>

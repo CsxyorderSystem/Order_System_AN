@@ -46,7 +46,7 @@
             android:text="@string/get_code"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="-81dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/button_div"
             />
 
 
@@ -96,6 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/register_comfirm_button"
+            android:background="@drawable/button_div"
             android:text="@string/register_button"/>
 
     </LinearLayout>

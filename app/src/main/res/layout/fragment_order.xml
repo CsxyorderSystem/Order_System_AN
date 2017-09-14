@@ -1,25 +1,52 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/order_tabhost"
     tools:context="com.example.a206170.order_system.UserUI.OrderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-   <TabHost
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-       <TabWidget
+
+       <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
-           android:id="@android:id/tabs"
+           android:orientation="vertical"
            >
+       <TabWidget
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@android:id/tabs"
+           ></TabWidget>
            <FrameLayout
                android:layout_width="match_parent"
-               android:layout_height="390dp"
+               android:layout_height="match_parent"
                android:id="@android:id/tabcontent">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/finish_layout">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/text1"
+                       android:text="ddd"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/unfinish_layout">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/text2"
+                       android:text="aaaa"/>
+               </LinearLayout>
+
+
+
 
            </FrameLayout>
-       </TabWidget>
-   </TabHost>
+       </LinearLayout>
 
-</FrameLayout>
+
+
+</TabHost>
